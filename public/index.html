@@ -21,17 +21,28 @@
         color: #d5d5d5;
         font-family: "Noto Sans", sans-serif;
       }
-      h1 {
-        font-size: 3rem;
+      @media only screen and (max-width: 600px) {
+        h1 {
+          font-size: 1.8rem;
+        }
+        .material-symbols-outlined {
+          font-size: 1.8rem;
+        }
       }
+      @media only screen and (min-width: 601px) {
+        h1 {
+          font-size: 3rem;
+        }
+        .material-symbols-outlined {
+          font-size: 3rem;
+        }
+      }
+
       .center div {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100vh;
-      }
-      .material-symbols-outlined {
-        font-size: 3rem;
       }
     </style>
   </head>
