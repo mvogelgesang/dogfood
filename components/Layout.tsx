@@ -33,8 +33,9 @@ export default function Layout({
   const canonicalUrl = `${siteUrl}${router.asPath}`;
 
   return (
-    <div className="min-h-screen flex flex-col" lang="en">
+    <div className="min-h-screen flex flex-col">
       <Head>
+        <html lang="en" />
         {/* Basic metadata */}
         <title>{fullTitle}</title>
         <meta name="description" content={description || defaultDescription} />
@@ -102,7 +103,7 @@ export default function Layout({
 
       <Header />
       
-      <main id="main-content" className="flex-grow" tabIndex={-1}>
+      <main id="main-content" className="flex-grow" role="main">
         {children}
       </main>
 

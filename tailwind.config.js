@@ -11,12 +11,12 @@ module.exports = {
         // Champagne theme (Light mode)
         "light-background": "#FFF9F0", // Soft champagne background
         "light-card": "#FFF5E6", // Lighter champagne for cards
-        "light-heading": "#2C1810", // Deep brown for headings (WCAG AA compliant)
-        "light-text": "#4A3C2F", // Rich brown for text (WCAG AA compliant)
-        "light-accent": "#B08D6D", // Darker champagne gold accent for better contrast
-        "light-accent-hover": "#8B6B4F", // Even darker for hover states
+        "light-heading": "#1A120B", // Darker brown for headings (WCAG AA compliant)
+        "light-text": "#2C1810", // Rich brown for text (WCAG AA compliant)
+        "light-accent": "#8B6B4F", // Darker champagne gold accent for better contrast
+        "light-accent-hover": "#6B4F3B", // Even darker for hover states
         "light-tag-bg": "#E5D5C3", // Light champagne for tag backgrounds
-        "light-tag-text": "#2C1810", // Deep brown for tag text
+        "light-tag-text": "#1A120B", // Darker brown for tag text
 
         // Dog Food theme (Dark mode)
         "dark-background": "#1A120B", // Darker brown background

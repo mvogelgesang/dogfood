@@ -13,6 +13,11 @@ export interface Post {
   tags: string[];
 }
 
+export interface TagCount {
+  tag: string;
+  count: number;
+}
+
 export function getAllPosts(): Post[] {
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames
@@ -51,15 +56,19 @@ export function getPostBySlug(slug: string): Post {
   };
 }
 
-export function getAllTags(): string[] {
+export function getAllTags(): TagCount[] {
   const posts = getAllPosts();
-  const tags = new Set<string>();
+  const tagCounts = new Map<string, number>();
 
   posts.forEach((post) => {
-    post.tags.forEach((tag) => tags.add(tag));
+    post.tags.forEach((tag) => {
+      tagCounts.set(tag, (tagCounts.get(tag) || 0) + 1);
+    });
   });
 
-  return Array.from(tags).sort();
+  return Array.from(tagCounts.entries())
+    .map(([tag, count]) => ({ tag, count }))
+    .sort((a, b) => a.tag.localeCompare(b.tag));
 }
 
 export function getPostsByTag(tag: string): Post[] {
