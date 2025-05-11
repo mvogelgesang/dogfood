@@ -8,18 +8,25 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "light-background": "#ffffff",
-        "light-card": "#f8f9fa",
-        "light-heading": "#1a1a1a",
-        "light-text": "#2d3748",
-        "light-accent": "#2563eb",
-        "light-accent-hover": "#1d4ed8",
-        "dark-background": "#111827",
-        "dark-card": "#1f2937",
-        "dark-heading": "#f3f4f6",
-        "dark-text": "#e5e7eb",
-        "dark-accent": "#60a5fa",
-        "dark-accent-hover": "#3b82f6",
+        // Champagne theme (Light mode)
+        "light-background": "#FFF9F0", // Soft champagne background
+        "light-card": "#FFF5E6", // Lighter champagne for cards
+        "light-heading": "#2C1810", // Deep brown for headings (WCAG AA compliant)
+        "light-text": "#4A3C2F", // Rich brown for text (WCAG AA compliant)
+        "light-accent": "#B08D6D", // Darker champagne gold accent for better contrast
+        "light-accent-hover": "#8B6B4F", // Even darker for hover states
+        "light-tag-bg": "#E5D5C3", // Light champagne for tag backgrounds
+        "light-tag-text": "#2C1810", // Deep brown for tag text
+
+        // Dog Food theme (Dark mode)
+        "dark-background": "#1A120B", // Darker brown background
+        "dark-card": "#2C1810", // Deep brown for cards
+        "dark-heading": "#F5E6D3", // Light champagne for headings
+        "dark-text": "#E5D5C3", // Soft champagne for text
+        "dark-accent": "#D4A373", // Warm orange accent
+        "dark-accent-hover": "#E6B17E", // Lighter orange for hover
+        "dark-tag-bg": "#3D2415", // Dark brown for tag backgrounds
+        "dark-tag-text": "#F5E6D3", // Light champagne for tag text
       },
       typography: {
         DEFAULT: {
