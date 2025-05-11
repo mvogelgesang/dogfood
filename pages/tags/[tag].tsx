@@ -89,7 +89,7 @@ export default function TagPage({ tag, posts }: TagPageProps) {
 export const getStaticPaths: GetStaticPaths = async () => {
   const tags = getAllTags();
   return {
-    paths: tags.map((tag) => ({
+    paths: tags.map(({ tag }) => ({
       params: {
         tag,
       },
