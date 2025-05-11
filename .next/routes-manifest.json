@@ -61,27 +61,27 @@
   "dataRoutes": [
     {
       "page": "/",
-      "dataRouteRegex": "^/_next/data/6xYsjdfvWvnkkHfWaAbTN/index\\.json$"
+      "dataRouteRegex": "^/_next/data/8EfP6x0_SnU0TGlwAkQqt/index\\.json$"
     },
     {
       "page": "/posts/[slug]",
       "routeKeys": {
         "nxtPslug": "nxtPslug"
       },
-      "dataRouteRegex": "^/_next/data/6xYsjdfvWvnkkHfWaAbTN/posts/([^/]+?)\\.json$",
-      "namedDataRouteRegex": "^/_next/data/6xYsjdfvWvnkkHfWaAbTN/posts/(?<nxtPslug>[^/]+?)\\.json$"
+      "dataRouteRegex": "^/_next/data/8EfP6x0_SnU0TGlwAkQqt/posts/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/8EfP6x0_SnU0TGlwAkQqt/posts/(?<nxtPslug>[^/]+?)\\.json$"
     },
     {
       "page": "/tags",
-      "dataRouteRegex": "^/_next/data/6xYsjdfvWvnkkHfWaAbTN/tags\\.json$"
+      "dataRouteRegex": "^/_next/data/8EfP6x0_SnU0TGlwAkQqt/tags\\.json$"
     },
     {
       "page": "/tags/[tag]",
       "routeKeys": {
         "nxtPtag": "nxtPtag"
       },
-      "dataRouteRegex": "^/_next/data/6xYsjdfvWvnkkHfWaAbTN/tags/([^/]+?)\\.json$",
-      "namedDataRouteRegex": "^/_next/data/6xYsjdfvWvnkkHfWaAbTN/tags/(?<nxtPtag>[^/]+?)\\.json$"
+      "dataRouteRegex": "^/_next/data/8EfP6x0_SnU0TGlwAkQqt/tags/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/8EfP6x0_SnU0TGlwAkQqt/tags/(?<nxtPtag>[^/]+?)\\.json$"
     }
   ],
   "rsc": {
