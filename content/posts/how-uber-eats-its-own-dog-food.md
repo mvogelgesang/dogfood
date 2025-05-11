@@ -1,0 +1,44 @@
+---
+title: "How Uber Eats Its Own Dog Food: A Look at Internal Software Use and Product Evolution"
+date: "2025-05-08"
+excerpt: "Uber leverages its own technology extensively, from sophisticated experimentation platforms to internal tools and targeted beta programs. This post explores how dogfooding—using their own products—helps Uber innovate, refine, and occasionally, stumble."
+tags: ["dogfooding", "software development", "uber", "product development", "beta testing", "internal tools", "experimentation", "agile"]
+---
+
+In the fast-paced world of software and services, there's a time-honored practice that separates the truly committed from the rest: "eating your own dog food," or dogfooding. It’s the simple yet powerful idea that companies should use their own products internally. This isn't just about quality assurance; it's about deeply understanding the user experience, fostering innovation, and building better solutions. Ride-sharing and delivery giant Uber is no stranger to this philosophy, employing various forms of dogfooding across its vast technological landscape.
+
+While specific, company-wide programs for employees to exclusively use beta versions of the core Rider app for daily activities aren't always publicly detailed, Uber's approach to internal software use and product iteration reveals a strong culture of testing, feedback, and in-house tool reliance.
+
+## Riding on Experimentation: The Experimentation Platform (XP)
+
+At the heart of Uber's product evolution is its sophisticated **Experimentation Platform (XP)**. As detailed on the [Uber Blog ("Under the Hood of Uber's Experimentation Platform")](https://www.uber.com/blog/xp/), this in-house system is pivotal for testing new features, design changes, and even machine learning models across all of Uber's applications – Rider, Driver, Eats, and Freight. XP allows engineers and data scientists to run over 1,000 experiments concurrently, employing A/B/N testing, causal inference, and more.
+
+Before launching the completely redesigned Driver app, for instance, it "went through extensive hypothesis testings through a series of experiments conducted with our XP." This platform ensures that changes are data-driven and validated with real users (which can, and often do, include Uber employees themselves) before being rolled out broadly. While this is more akin to large-scale, controlled beta testing than traditional dogfooding of unstable builds by all employees, it’s a critical part of their iterative process. More recently, Uber has continued to invest in this area, [making their experiment evaluation engine 100x faster](https://www.uber.com/blog/making-ubers-experiment-evaluation-engine-100x-faster/), showcasing their commitment to rapid, data-backed iteration.
+
+## Building with Drivers, For Drivers: The New Driver App Beta
+
+A stellar example of targeted dogfooding and user-centric design at Uber was the development of their new Driver app. According to an [Uber Blog post ("Let's build together: the story behind the new Driver app")](https://www.uber.com/en-CA/blog/building-together-driver-app-ca/), the company didn't just rely on internal teams. They engaged over **400 drivers and delivery partners across 7 cities worldwide** in a unique Beta program.
+
+These weren't just passive testers. Participants actively collaborated with Uber designers and engineers, providing ideas, sharing feedback, and reporting bugs. As Uber engineer Haider noted, "A typical Beta wasn't going to cut it for us...We truly had to understand how the app performed in various cities and in different circumstances for different drivers and delivery partners." Drivers like Eva highlighted the value of being heard: "Just the fact that I was heard and my opinion mattered was huge." This deep collaboration, including Uber employees doing ride-alongs, allowed the team to identify and fix issues, like improving the visibility of surge pricing on the map, based directly on the experiences of those who use the app to earn their livelihood. Over 16 weeks, these beta testers reported over 2,600 bugs, a testament to the power of real-world use.
+
+## Internal Tools Get the Dogfood Treatment Too
+
+Uber doesn't just dogfood its main user-facing apps; its internal tools are also built and refined through self-use.
+
+* **uRate:** To streamline feedback collection, Uber developed **uRate**, an internal platform described on the [Uber Blog ("Thank You for Your Feedback: Improving the Uber Engineering Workflow with uRate")](https://www.uber.com/blog/urate/). This tool allows Uber employees (and potentially external users in some contexts) to provide instant feedback on various Uber tools and products. The uRate widget can be integrated into any internal application, enabling employees to report bugs, suggest features, or simply rate their experience. This creates a direct and continuous feedback loop, ensuring internal tools are as efficient and user-friendly as possible. For example, after embedding uRate into their internal "Whober" employee portal, the team quickly identified a common request for more searchable user fields based on the feedback received.
+
+* **COTA (Customer Obsession Ticket Assistant):** Uber's customer support operations are enhanced by COTA, an in-house developed tool that uses machine learning and natural language processing to help agents resolve issues more efficiently. As detailed in blog posts about [COTA's initial development](https://www.uber.com/blog/cota/) and its [scaling with deep learning (COTA v2)](https://www.uber.com/blog/cota-v2/), this system is used daily by Uber's support team. The insights gained from this internal usage directly fueled its iterations and improvements, reducing ticket resolution times by over 10% while maintaining or improving customer satisfaction. This is a clear case of dogfooding a critical internal system to enhance operational efficiency and, ultimately, the customer experience.
+
+* **Devpod:** Even the tools used by Uber's developers are dogfooded. **Devpod**, Uber's remote development environment, was created to boost engineering productivity. According to the [Uber Blog ("Devpod: Improving Developer Productivity at Uber with Remote Development")](https://www.uber.com/blog/devpod-improving-developer-productivity-at-uber/), internal Net Promoter Score (NPS) feedback from Uber developers consistently identifies Devpod as a major productivity booster. This internal usage and feedback cycle helps the Devpod team refine the tool, addressing everything from IDE experience to cost efficiency.
+
+## The Unspoken Expectation and Potential Pitfalls
+
+Beyond formal programs, there's often an implicit expectation in tech companies that employees will be regular users of their own services. As one [Bubble.io blog post on dogfooding](https://bubble.io/blog/dogfooding-startup-tech/) suggests, "Uber employees should regularly use Uber to get to and from the office." This day-to-day usage naturally leads to employees experiencing the product just as any customer would, spotting pain points, and ideating improvements.
+
+However, relying solely on internal software can sometimes lead companies astray, especially if the employee base isn't representative of the broader user population or if the tools are used for purposes beyond ethical product improvement. An example of Uber's internally developed software leading to controversy was the "Hell" program, reported by [GeekWire](https://www.geekwire.com/2017/report-uber-used-secret-hell-software-track-drivers-competitor-lyft/) and others. This software was allegedly used between 2014 and 2016 to track drivers working for competitor Lyft, reportedly to gain a competitive advantage by luring them away. While it demonstrates Uber's capability in building and deploying its own software solutions, it also serves as a stark reminder that dogfooding's positive intent can be overshadowed if the application of internal technology isn't guided by strong ethical principles.
+
+## Conclusion: A Culture of Iteration and Internal Reliance
+
+Uber's approach to software development is deeply intertwined with the practice of using its own solutions. From the rigorous A/B testing managed by its Experimentation Platform to the collaborative beta program for the new Driver app and the continuous refinement of internal tools like uRate, COTA, and Devpod, Uber leverages its own technology to learn, iterate, and enhance its offerings.
+
+This internal reliance fosters a deep understanding of their products' strengths and weaknesses. While the path of dogfooding isn't without its potential for missteps, Uber’s commitment to building and using its own tools is a significant driver in its continuous push for innovation and an improved user experience for riders, drivers, eaters, and its own employees.
