@@ -76,8 +76,8 @@ node_modules/
 /coverage
 
 # next.js
-/.next/
-/out/
+.next/
+out/
 
 # production
 /build
@@ -95,3 +95,4 @@ node_modules/
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+

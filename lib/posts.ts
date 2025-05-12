@@ -58,20 +58,27 @@ export function getPostBySlug(slug: string): Post {
 
 export function getAllTags(): TagCount[] {
   const posts = getAllPosts();
-  const tagCounts = new Map<string, number>();
+  const tagCounts: { [key: string]: number } = {};
 
   posts.forEach((post) => {
-    post.tags.forEach((tag) => {
-      tagCounts.set(tag, (tagCounts.get(tag) || 0) + 1);
+    post.tags?.forEach((tag) => {
+      const normalizedTag = tag.toLowerCase().trim();
+      tagCounts[normalizedTag] = (tagCounts[normalizedTag] || 0) + 1;
     });
   });
 
-  return Array.from(tagCounts.entries())
-    .map(([tag, count]) => ({ tag, count }))
-    .sort((a, b) => a.tag.localeCompare(b.tag));
+  return Object.entries(tagCounts)
+    .map(([tag, count]) => ({
+      tag: tag.replace(/\s+/g, "-"), // Replace spaces with hyphens
+      count,
+    }))
+    .sort((a, b) => b.count - a.count);
 }
 
 export function getPostsByTag(tag: string): Post[] {
   const posts = getAllPosts();
-  return posts.filter((post) => post.tags.includes(tag));
+  const normalizedTag = tag.toLowerCase().trim();
+  return posts.filter((post) =>
+    post.tags?.some((postTag) => postTag.toLowerCase().trim() === normalizedTag)
+  );
 }
