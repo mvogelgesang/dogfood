@@ -21,7 +21,7 @@ export default function TagPage({ tag, posts }: TagPageProps) {
         <div className="max-w-4xl mx-auto">
           <header className="mb-12 text-center">
             <h1 className="text-4xl font-bold mb-4 text-light-heading dark:text-dark-heading">
-              Articles tagged with "{tag}"
+              Articles tagged with &quot;{tag}&quot;
             </h1>
             <p className="text-lg text-light-text dark:text-dark-text">
               {posts.length} article{posts.length !== 1 ? 's' : ''} found

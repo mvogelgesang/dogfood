@@ -16,7 +16,7 @@ export default function SiteOverview() {
                 What is Dogfooding?
               </h2>
               <p className="text-light-text dark:text-dark-text">
-                "Eating your own dog food" is a business practice where companies use their own products
+                &quot;Eating your own dog food&quot; is a business practice where companies use their own products
                 internally. This approach helps identify issues, gather feedback, and demonstrate confidence
                 in their offerings.
               </p>

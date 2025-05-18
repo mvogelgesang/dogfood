@@ -1,5 +1,4 @@
 import { GetStaticProps, GetStaticPaths } from 'next';
-import Head from 'next/head';
 import Link from 'next/link';
 import { getAllPosts, getPostBySlug, Post } from '../../lib/posts';
 import Layout from '../../components/Layout';
