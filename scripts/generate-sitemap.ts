@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { getAllPosts, getAllTags } from "../lib/posts";
+import { getAllPosts, getAllTags, Post, TagCount } from "../lib/posts.js";
 
 const DOMAIN = "https://dogfood.ing";
 
@@ -17,7 +17,7 @@ function generateSitemap() {
   </url>
   ${posts
     .map(
-      (post) => `
+      (post: Post) => `
   <url>
     <loc>${DOMAIN}/posts/${post.slug}</loc>
     <lastmod>${new Date(post.date).toISOString()}</lastmod>
@@ -28,9 +28,9 @@ function generateSitemap() {
     .join("")}
   ${tags
     .map(
-      (tag) => `
+      (tagCount: TagCount) => `
   <url>
-    <loc>${DOMAIN}/tags/${tag}</loc>
+    <loc>${DOMAIN}/tags/${tagCount.tag}</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>`
