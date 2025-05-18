@@ -5,57 +5,9 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <url>
-    <loc>https://dogfood.ing/posts/whats-app-chatting-their-own-path</loc>
-    <lastmod>2025-05-18T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/posts/supersapiens-fueling-innovation</loc>
-    <lastmod>2025-05-18T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/posts/strava-sweating-the-details</loc>
-    <lastmod>2025-05-18T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/posts/premier-league-tech-playbook</loc>
-    <lastmod>2025-05-18T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/posts/pga-inside-the-ropes</loc>
-    <lastmod>2025-05-18T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/posts/garmin-engineered-on-the-inside</loc>
-    <lastmod>2025-05-18T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/posts/formula-1-racing-on-its-own-innovation</loc>
-    <lastmod>2025-05-18T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  
   <url>
     <loc>https://dogfood.ing/posts/wordpress-at-work</loc>
-    <lastmod>2025-05-17T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/posts/sun-microsystems-network-is-the-computer</loc>
     <lastmod>2025-05-17T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -97,12 +49,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dogfood.ing/posts/dell-on-dell</loc>
-    <lastmod>2025-05-17T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://dogfood.ing/posts/cursor-coding-with-a-co-pilot</loc>
     <lastmod>2025-05-17T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -110,12 +56,6 @@
   </url>
   <url>
     <loc>https://dogfood.ing/posts/cloudflare-building-better-internet</loc>
-    <lastmod>2025-05-17T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/posts/blackberry-a-culture-of-internal-use</loc>
     <lastmod>2025-05-17T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -276,7 +216,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
+  
   <url>
     <loc>https://dogfood.ing/tags/Product Development</loc>
     <changefreq>weekly</changefreq>
@@ -293,16 +233,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://dogfood.ing/tags/Customer Zero</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/User Experience</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://dogfood.ing/tags/Dogfooding</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -313,17 +243,22 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://dogfood.ing/tags/Innovation</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Cybersecurity</loc>
+    <loc>https://dogfood.ing/tags/Customer Zero</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://dogfood.ing/tags/Internal Innovation</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dogfood.ing/tags/User Experience</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dogfood.ing/tags/Cybersecurity</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -338,11 +273,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://dogfood.ing/tags/Data Analytics</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://dogfood.ing/tags/Open Source</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -353,12 +283,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://dogfood.ing/tags/Meta</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Sports Technology</loc>
+    <loc>https://dogfood.ing/tags/Innovation</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -369,46 +294,6 @@
   </url>
   <url>
     <loc>https://dogfood.ing/tags/Tech History</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Internal Communication</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Wearable Technology</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Employee Feedback</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Fitness Technology</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Broadcast Technology</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Fan Engagement</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Aws</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/It Infrastructure</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -424,6 +309,11 @@
   </url>
   <url>
     <loc>https://dogfood.ing/tags/Mozilla</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dogfood.ing/tags/Meta</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -468,161 +358,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://dogfood.ing/tags/Whatsapp</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/End-to-end Encryption</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Messaging Apps</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Supersapiens</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Continuous Glucose Monitoring</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Athlete Performance</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Biohacking</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Endurance Sports</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Strava</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Data-driven Design</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Athlete Community</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Premier League</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Var</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Football Technology</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Fantasy Premier League</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Pga Tour</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Shotlink</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Golf Technology</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Broadcast Innovation</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Digital Platforms</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Garmin</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Running Watches</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Forerunner</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Fenix</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Gps Watches</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Formula 1</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Technology</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/F1 Tv</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Motorsport Tech</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Generative Ai</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Race Operations</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://dogfood.ing/tags/Wordpress</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -639,6 +374,11 @@
   </url>
   <url>
     <loc>https://dogfood.ing/tags/Remote Work</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dogfood.ing/tags/Internal Communication</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -663,47 +403,12 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://dogfood.ing/tags/Sun Microsystems</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Solaris</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Sparc</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Java</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Nfs</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Zfs</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Openoffice</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Network Computing</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://dogfood.ing/tags/Splunk</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dogfood.ing/tags/Data Analytics</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -858,36 +563,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://dogfood.ing/tags/Dell Technologies</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Dell Digital</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Enterprise Technology</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Ai Solutions</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Client Solutions</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Digital Transformation</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://dogfood.ing/tags/Cursor</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -929,36 +604,6 @@
   </url>
   <url>
     <loc>https://dogfood.ing/tags/Network Performance</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Blackberry</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Enterprise Software</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Qnx</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Mobile Security</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Uem</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Iot Security</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
