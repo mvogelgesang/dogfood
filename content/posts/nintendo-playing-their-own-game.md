@@ -1,7 +1,7 @@
 ---
 title: "Playing Their Own Game: How Nintendo's Internal Creators Forge the Path of Innovation"
 date: "2025-05-18"
-excerpt: "Nintendo's magic isn't just for its players; it's a core part of its creation process. By having its own game development legends and teams act as the first, most demanding users of new hardware and tools, Nintendo "plays its own game" to refine the unique experiences that have captivated generations."
+excerpt: "Nintendo's magic isn't just for its players; it's a core part of its creation process. By having its own game development legends and teams act as the first, most demanding users of new hardware and tools, Nintendo 'plays its own game' to refine the unique experiences that have captivated generations."
 tags: ["Nintendo", "Game Development", "Console Design", "Shigeru Miyamoto", "Satoru Iwata", "Nintendo Switch", "Innovation", "Company Culture", "First-Party Development", "Product Development"]
 ---
 
