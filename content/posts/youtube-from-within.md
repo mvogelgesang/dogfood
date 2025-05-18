@@ -1,7 +1,7 @@
 ---
 title: "From Within: How YouTube's Own Tech Drives Its Global Platform" 
 date: "2025-05-11" excerpt: "Exploring how YouTube leverages Google's and its own proprietary technology to power its massive video platform, from infrastructure like Bigtable and custom CDNs to AI-driven recommendations and internal development frameworks." 
-tags: ["YouTube", "Google", "SoftwareDevelopment", "Infrastructure", "AI", "MachineLearning", "Bigtable", "CDN", "ProductDevelopment", "InternalTools"]
+tags: ["YouTube", "Google", "Software Development", "Infrastructure", "AI", "Machine Learning", "Big Table", "CDN", "Product Development", "Internal Tools"]
 ---
 ## **From Within: How YouTube's Own Tech Drives Its Global Platform**
 

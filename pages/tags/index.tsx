@@ -9,6 +9,9 @@ interface TagsPageProps {
 }
 
 export default function TagsPage({ tags }: TagsPageProps) {
+  // Sort tags alphabetically by their display names
+  const sortedTags = [...tags].sort((a, b) => a.tag.localeCompare(b.tag));
+
   return (
     <Layout
       title="Browse by Tag"
@@ -28,16 +31,18 @@ export default function TagsPage({ tags }: TagsPageProps) {
           </header>
 
           <nav aria-label="Tag navigation">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" role="list">
-              {tags.map(({ tag, count }) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" role="list">
+              {sortedTags.map(({ tag, count }) => (
                 <div key={tag} role="listitem">
                   <Link
                     href={`/tags/${tag}`}
-                    className="bg-light-tag-bg dark:bg-dark-tag-bg text-light-tag-text dark:text-dark-tag-text px-4 py-3 rounded-lg hover:bg-light-accent/20 dark:hover:bg-dark-accent/20 focus:outline-none focus:ring-2 focus:ring-light-accent dark:focus:ring-dark-accent text-center flex flex-col items-center justify-center"
-                    aria-label={`View ${count} article${count !== 1 ? 's' : ''} tagged with ${tag}`}
+                    className="block p-4 bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-md transition-shadow"
+                    aria-label={`View ${count} article${count === 1 ? "" : "s"} tagged with ${tag}`}
                   >
-                    <span className="font-medium">{tag}</span>
-                    <span className="text-sm opacity-75">{count} article{count !== 1 ? 's' : ''}</span>
+                    <span className="text-xl font-semibold">{tag}</span>
+                    <span className="ml-2 text-gray-600 dark:text-gray-400">
+                      ({count})
+                    </span>
                   </Link>
                 </div>
               ))}

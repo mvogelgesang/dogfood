@@ -18,6 +18,30 @@ export interface TagCount {
   count: number;
 }
 
+// Helper function to normalize tags
+function normalizeTag(tag: string): string {
+  return (
+    tag
+      .toLowerCase()
+      .trim()
+      // Replace multiple spaces with a single space
+      .replace(/\s+/g, " ")
+      // Replace special characters with spaces
+      .replace(/[^a-z0-9\s-]/g, " ")
+      // Replace multiple spaces with a single space again
+      .replace(/\s+/g, " ")
+      .trim()
+  );
+}
+
+// Helper function to format tag for display
+function formatTag(tag: string): string {
+  return tag
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+}
+
 export function getAllPosts(): Post[] {
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames
@@ -34,7 +58,7 @@ export function getAllPosts(): Post[] {
         date: data.date,
         content,
         excerpt: data.excerpt || "",
-        tags: data.tags || [],
+        tags: (data.tags || []).map(normalizeTag),
       };
     });
 
@@ -52,7 +76,7 @@ export function getPostBySlug(slug: string): Post {
     date: data.date,
     excerpt: data.excerpt || "",
     content,
-    tags: data.tags || [],
+    tags: (data.tags || []).map(normalizeTag),
   };
 }
 
@@ -62,14 +86,14 @@ export function getAllTags(): TagCount[] {
 
   posts.forEach((post) => {
     post.tags?.forEach((tag) => {
-      const normalizedTag = tag.toLowerCase().trim();
+      const normalizedTag = normalizeTag(tag);
       tagCounts[normalizedTag] = (tagCounts[normalizedTag] || 0) + 1;
     });
   });
 
   return Object.entries(tagCounts)
     .map(([tag, count]) => ({
-      tag: tag.replace(/\s+/g, "-"), // Replace spaces with hyphens
+      tag: formatTag(tag),
       count,
     }))
     .sort((a, b) => b.count - a.count);
@@ -77,8 +101,8 @@ export function getAllTags(): TagCount[] {
 
 export function getPostsByTag(tag: string): Post[] {
   const posts = getAllPosts();
-  const normalizedTag = tag.toLowerCase().trim();
+  const normalizedTag = normalizeTag(tag);
   return posts.filter((post) =>
-    post.tags?.some((postTag) => postTag.toLowerCase().trim() === normalizedTag)
+    post.tags?.some((postTag) => normalizeTag(postTag) === normalizedTag)
   );
 }

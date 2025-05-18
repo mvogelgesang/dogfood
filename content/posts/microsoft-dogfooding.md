@@ -2,7 +2,7 @@
 title: "Microsoft's Internal Dogfooding Culture"
 date: "2025-05-08"
 excerpt: "How Microsoft's 'Eat Your Own Dog Food' philosophy shaped their development culture"
-tags: ["microsoft", "development-culture", "software-development", "best-practices", "case-study"]
+tags: ["microsoft", "development culture", "software development", "best practices", "case study"]
 ---
 Microsoft's "Eat Your Own Dog Food" program, officially known as "Microsoft Dogfood," is one of the most well-known examples of internal product testing in the tech industry. This practice has been a cornerstone of Microsoft's development culture since the 1980s.
 

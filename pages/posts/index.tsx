@@ -46,8 +46,7 @@ export default function PostsPage({ posts }: PostsPageProps) {
                   >
                     {new Date(post.date).toLocaleDateString('en-US', {
                       year: 'numeric',
-                      month: 'long',
-                      day: 'numeric',
+                      month: 'long'
                     })}
                   </time>
                   <p className="text-light-text dark:text-dark-text mb-4 line-clamp-3">

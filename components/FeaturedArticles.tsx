@@ -38,7 +38,6 @@ export default function FeaturedArticles({ posts }: FeaturedArticlesProps) {
                   {new Date(post.date).toLocaleDateString('en-US', {
                     year: 'numeric',
                     month: 'long',
-                    day: 'numeric',
                   })}
                 </time>
                 <p className="text-light-text dark:text-dark-text mb-4 line-clamp-3">
@@ -49,13 +48,17 @@ export default function FeaturedArticles({ posts }: FeaturedArticlesProps) {
                     {post.tags.slice(0, 3).map((tag) => (
                       <span
                         key={tag}
+                        role="listitem"
                         className="text-sm px-2 py-1 rounded bg-light-tag-bg dark:bg-dark-tag-bg text-light-tag-text dark:text-dark-tag-text"
                       >
                         {tag}
                       </span>
                     ))}
                     {post.tags.length > 3 && (
-                      <span className="text-sm px-2 py-1 rounded bg-light-tag-bg dark:bg-dark-tag-bg text-light-tag-text dark:text-dark-tag-text">
+                      <span 
+                        role="listitem"
+                        className="text-sm px-2 py-1 rounded bg-light-tag-bg dark:bg-dark-tag-bg text-light-tag-text dark:text-dark-tag-text"
+                      >
                         +{post.tags.length - 3} more
                       </span>
                     )}

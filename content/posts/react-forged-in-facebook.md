@@ -2,7 +2,7 @@
 title: "React: Forged in Facebook's Furnace, Powering Meta's Universe"
 date: "2025-05-08"
 excerpt: "How Meta (formerly Facebook) built React to solve its own massive UI challenges and continues to shape the framework's evolution through extensive internal use across its vast ecosystem of products, for better or sometimes, for more complex."
-tags: ["ReactJS", "JavaScript", "Facebook", "Meta", "SoftwareDevelopment", "InternalUsage", "OpenSource", "WebDevelopment", "UIFramework"]
+tags: ["ReactJS", "JavaScript", "Facebook", "Meta", "Software Development", "Internal Usage", "Open Source", "Web Development", "UI Framework"]
 ---
 
 The story of a software company extensively using its own creations is a powerful narrative of innovation, refinement, and sometimes, inherent bias. When the creator is also the primary, most demanding user, the product is often pushed to its limits, evolving rapidly to meet complex, real-world needs. Facebook's (now Meta) JavaScript library, React, is a quintessential example of this phenomenon. Born out of Facebook's own engineering challenges, React has not only revolutionized how developers build user interfaces but continues to be molded by Meta's vast and varied internal applications.
