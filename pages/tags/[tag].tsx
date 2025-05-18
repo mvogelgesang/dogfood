@@ -48,7 +48,6 @@ export default function TagPage({ tag, posts }: TagPageProps) {
                     {new Date(post.date).toLocaleDateString('en-US', {
                       year: 'numeric',
                       month: 'long',
-                      day: 'numeric',
                     })}
                   </time>
                   <p className="text-light-text dark:text-dark-text mb-4">
