@@ -1,0 +1,43 @@
+---
+title: "Rakuten's Ecosystem Within: How Internal Innovation and Use Power a Global Tech Giant"
+date: "2025-05-18"
+excerpt: "Rakuten isn't just a collection of diverse businesses; it's a living laboratory where its own technologies, especially in AI and cloud-native telecom, are rigorously used and refined by its employees. This 'Rakuten on Rakuten' approach, from internal AI assistants to building a mobile network from scratch, is fundamental to its innovation and its offerings to the world."
+tags: ["Rakuten", "AI", "Rakuten Symphony", "Rakuten Mobile", "Ecosystem", "Product Development", "Company Culture", "Internal Innovation", "Dogfooding", "Cloud-Native", "Fintech", "E-commerce"]
+---
+
+Rakuten Group, a global leader in internet services, operates a famously diverse ecosystem spanning e-commerce, fintech, digital content, and mobile communications. What's perhaps less visible is how this sprawling network of over 70 businesses serves as an immense internal proving ground. Rakuten doesn't just build technology for its customers and partners; it is, in many respects, its own most demanding first user. This deep internal adoption, particularly evident in its aggressive push into Artificial Intelligence and its revolutionary approach to mobile networks, is a core driver of its innovation and shapes the very products and services it offers worldwide.
+
+### "Rakuten AI for Rakutenians": Empowering from Within
+
+One of the most striking examples of Rakuten "eating its own dogfood" is the **"Rakuten AI for Rakutenians"** initiative. This isn't a niche tool for a few engineers; it's a suite of AI capabilities used by an overwhelming majority of Rakuten's global workforce—reportedly 30,000 employees, with 8,000 using it daily. As detailed on the [Rakuten Today blog](https://rakuten.today/blog/inside-rakuten-ai-shaimay-shah-on-driving-rakutens-ai-transformation.html), this internal AI platform helps automate routine tasks like summarizing meetings, chats, and emails, and even assists non-technical employees in creating custom AI applications without coding expertise.
+
+Shaimay Shah, a data scientist in Rakuten Group's AI & Data Division, encapsulated the philosophy: **"The goal for Rakuten AI for Rakutenians stems from the fact that to empower others, we must first empower ourselves.”** By making its own diverse workforce the first beneficiaries and testers of its AI tools, Rakuten achieves several critical outcomes:
+
+* **Rapid Iteration and Refinement:** Direct, widespread internal use provides immediate feedback, allowing for quick identification of bugs, usability issues, and areas for improvement in their AI models and interfaces.
+* **Democratization of AI:** Enabling non-technical employees to build their own AI tools fosters a company-wide AI literacy and culture of innovation. This also means that AI solutions are being tested against a vast array of real-world internal use cases.
+* **Robust and User-Friendly Solutions:** Before similar AI capabilities are offered to external business clients (like the "Rakuten AI for Business" generative AI service), they have been battle-tested and validated by tens of thousands of internal users.
+* **Efficiency Gains:** CEO Hiroshi Mikitani has highlighted the significant productivity and efficiency gains achieved through this internal AI adoption, with a stated goal to boost marketing, operational, and client efficiency by 20% using AI. (Source: [Rakuten Today](https://rakuten.today/blog/supercharging-rakutens-merchants-with-ai-ceo-mikitani.html))
+
+Rakuten's strategy involves developing its own specialized AI models, like Rakuten AI 7B and Rakuten AI 2.0, optimized for specific needs such as the Japanese language. Mikitani emphasized, "The key lies in how much effective information you can connect – that's why we needed to do it ourselves.” This internal development and deployment cycle for AI is a powerful form of "dogfooding."
+
+### Rakuten Mobile as Customer Zero for Rakuten Symphony
+
+Perhaps the most ambitious and impactful example of Rakuten using itself as "customer zero" is the journey of **Rakuten Mobile** and the subsequent birth of **Rakuten Symphony**. Rakuten Mobile famously built the world's first fully virtualized, cloud-native Open RAN mobile network in Japan. This was a monumental undertaking, challenging traditional telecom infrastructure paradigms.
+
+The experience, technological innovations, operational expertise, and software developed in deploying and running Rakuten Mobile now form the core offerings of Rakuten Symphony, which provides these cloud-native telecom solutions to operators globally. As detailed on the [Rakuten Symphony blog](https://symphony.rakuten.com/blog/ten-telecom-realities-to-guide-2025-planning), Rakuten's experience as an operator provides a unique perspective and a battle-tested platform. They didn't just theorize about a new way to build mobile networks; they built one for themselves, facing and overcoming the real-world challenges involved. This makes Rakuten Symphony's offerings inherently "dogfooded" at an unprecedented scale. The collaboration with partners like [Red Hat](https://www.redhat.com/en/about/press-releases/red-hat-provide-rakuten-mobile-and-rakuten-symphony-open-source-expertise-and-solutions-innovate-and-enhance-customer-experience) and [Dell Technologies](https://www.dell.com/en-us/blog/unlocking-the-telecom-cloud-with-dell-and-rakuten-s-blueprint/) further underscores the development and validation of this telecom blueprint.
+
+### "SixthSense": Observing Their Own Universe
+
+To manage its vast and diverse digital ecosystem, Rakuten developed an internal AIOps platform called **"SixthSense."** This platform, as described by [Techcircle.in](https://www.techcircle.in/2025/04/11/rakuten-s-india-gcc-moves-beyond-support-builds-ai-platforms-for-global-ops/), monitors all of Rakuten's digital systems in real-time, using AI for anomaly detection and root cause analysis across the full stack—from infrastructure and data centers to applications and user experience.
+
+By being its own most critical user of SixthSense, Rakuten ensures the platform is capable of handling the scale and complexity of a global internet services company. The insights gained from monitoring their own e-commerce (Rakuten Ichiba), fintech (Rakuten Card, Rakuten Bank), and mobile operations feed directly into the refinement of SixthSense, making it a more powerful tool for maintaining stability and efficiency across the Rakuten ecosystem.
+
+### The Rakuten Ecosystem: An Interconnected Proving Ground
+
+The power of the Rakuten Ecosystem lies in its interconnectedness, with Rakuten Points serving as a unifying loyalty program. While less explicitly detailed in terms of direct product development feedback loops for each consumer service, the sheer number of Rakuten employees living within this ecosystem provides an ongoing, organic testbed. Employees shopping on Rakuten Ichiba, using Rakuten Card for payments, booking trips via Rakuten Travel, or streaming content are constantly interacting with the company's core offerings.
+
+This internal user base, familiar with the desired "Rakuten experience," can offer valuable qualitative feedback on usability, new features, and the seamlessness of cross-service integration. Rakuten's focus on analyzing vast amounts of customer data with AI to personalize experiences and improve services (as mentioned by [Rakuten Today](https://product-conference.corp.rakuten.co.in/blog/Rakuten's-AI-Revolution-Shaping-the-Future-of-Business-Technology-and-customer-use-cases)) would undoubtedly benefit from the data and behaviors of its own engaged workforce.
+
+### Conclusion: Innovation Through Self-Reliance and Ecosystem Synergy
+
+Rakuten's strategy of deeply integrating its own technological solutions into its diverse operations is a powerful form of "dogfooding" that extends beyond simple product testing. It's about building foundational platforms—be it for AI-driven productivity, cloud-native mobile networks, or full-stack observability—to meet its own complex needs first. This internal proving ground, populated by tens of thousands of employees and spanning a multitude of business domains, ensures that when Rakuten offers these technologies and services to the world, they are not just innovative but also robust, scalable, and validated by real-world, high-stakes deployment. By "empowering themselves first," Rakuten is truly building the future of its ecosystem from the inside out.
