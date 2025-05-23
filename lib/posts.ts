@@ -11,7 +11,7 @@ export interface Post {
   excerpt: string;
   content: string;
   tags: string[];
-  image?: string;
+  image: string | null;
 }
 
 export interface TagCount {
@@ -43,6 +43,24 @@ function formatTag(tag: string): string {
     .join(" ");
 }
 
+// Helper function to ensure tags are in the correct format
+function ensureTags(tags: unknown): string[] {
+  if (!tags) return [];
+  if (Array.isArray(tags)) {
+    return tags.map((tag) => String(tag));
+  }
+  if (typeof tags === "string") {
+    return tags.split(",").map((tag) => tag.trim());
+  }
+  return [];
+}
+
+// Helper function to ensure a value is either a string or null
+function ensureStringOrNull(value: unknown): string | null {
+  if (!value) return null;
+  return String(value);
+}
+
 export function getAllPosts(): Post[] {
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames
@@ -55,11 +73,12 @@ export function getAllPosts(): Post[] {
 
       return {
         slug,
-        title: data.title,
-        date: data.date,
+        title: String(data.title),
+        date: String(data.date),
         content,
-        excerpt: data.excerpt || "",
-        tags: (data.tags || []).map(normalizeTag),
+        excerpt: ensureStringOrNull(data.excerpt) || "",
+        tags: ensureTags(data.tags).map(normalizeTag),
+        image: ensureStringOrNull(data.image),
       };
     });
 
@@ -73,11 +92,12 @@ export function getPostBySlug(slug: string): Post {
 
   return {
     slug,
-    title: data.title,
-    date: data.date,
-    excerpt: data.excerpt || "",
+    title: String(data.title),
+    date: String(data.date),
+    excerpt: ensureStringOrNull(data.excerpt) || "",
     content,
-    tags: (data.tags || []).map(normalizeTag),
+    tags: ensureTags(data.tags).map(normalizeTag),
+    image: ensureStringOrNull(data.image),
   };
 }
 
