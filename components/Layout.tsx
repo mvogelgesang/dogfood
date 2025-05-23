@@ -3,6 +3,13 @@ import { useRouter } from 'next/router';
 import Header from './Header';
 import Footer from './Footer';
 import GoogleAnalytics from './GoogleAnalytics';
+import { ReactNode } from 'react';
+
+interface JsonLdData {
+  '@context': string;
+  '@type': string;
+  [key: string]: unknown;
+}
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -13,6 +20,8 @@ interface LayoutProps {
   publishedTime?: string;
   modifiedTime?: string;
   tags?: string[];
+  additionalMeta?: ReactNode[];
+  jsonLd?: JsonLdData;
 }
 
 export default function Layout({
@@ -24,6 +33,8 @@ export default function Layout({
   publishedTime,
   modifiedTime,
   tags = [],
+  additionalMeta = [],
+  jsonLd,
 }: LayoutProps) {
   const router = useRouter();
   const siteTitle = 'Dogfood.ing';
@@ -31,6 +42,7 @@ export default function Layout({
   const defaultDescription = 'Exploring how companies use their own products and technology';
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://dogfood.ing';
   const canonicalUrl = `${siteUrl}${router.asPath}`;
+  const fullImageUrl = `${siteUrl}${image}`;
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -49,14 +61,14 @@ export default function Layout({
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:title" content={fullTitle} />
         <meta property="og:description" content={description || defaultDescription} />
-        <meta property="og:image" content={`${siteUrl}${image}`} />
+        <meta property="og:image" content={fullImageUrl} />
         <meta property="og:site_name" content={siteTitle} />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={fullTitle} />
         <meta name="twitter:description" content={description || defaultDescription} />
-        <meta name="twitter:image" content={`${siteUrl}${image}`} />
+        <meta name="twitter:image" content={fullImageUrl} />
 
         {/* Article specific metadata */}
         {type === 'article' && (
@@ -69,26 +81,31 @@ export default function Layout({
           </>
         )}
 
+        {/* Additional meta tags */}
+        {additionalMeta}
+
         {/* Structured data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': type === 'article' ? 'Article' : 'WebSite',
-              name: fullTitle,
-              description: description || defaultDescription,
-              url: canonicalUrl,
-              ...(type === 'article' && {
-                datePublished: publishedTime,
-                dateModified: modifiedTime,
-                author: {
-                  '@type': 'Organization',
-                  name: siteTitle,
-                },
-                keywords: tags.join(', '),
-              }),
-            }),
+            __html: JSON.stringify(
+              jsonLd || {
+                '@context': 'https://schema.org',
+                '@type': type === 'article' ? 'Article' : 'WebSite',
+                name: fullTitle,
+                description: description || defaultDescription,
+                url: canonicalUrl,
+                ...(type === 'article' && {
+                  datePublished: publishedTime,
+                  dateModified: modifiedTime,
+                  author: {
+                    '@type': 'Organization',
+                    name: siteTitle,
+                  },
+                  keywords: tags.join(', '),
+                }),
+              }
+            ),
           }}
         />
       </Head>

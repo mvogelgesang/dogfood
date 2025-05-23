@@ -11,6 +11,7 @@ export interface Post {
   excerpt: string;
   content: string;
   tags: string[];
+  image?: string;
 }
 
 export interface TagCount {

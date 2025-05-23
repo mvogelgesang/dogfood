@@ -9,9 +9,16 @@ import html from 'remark-html';
 interface PostPageProps {
   post: Post;
   content: string;
+  readingTime: number;
+  wordCount: number;
 }
 
-export default function PostPage({ post, content }: PostPageProps) {
+export default function PostPage({ post, content, readingTime, wordCount }: PostPageProps) {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://dogfood.ing';
+  const postUrl = `${siteUrl}/posts/${post.slug}`;
+  const postImage = post.image || '/og-image.jpg';
+  const fullImageUrl = `${siteUrl}${postImage}`;
+
   return (
     <Layout
       title={post.title}
@@ -20,6 +27,47 @@ export default function PostPage({ post, content }: PostPageProps) {
       publishedTime={post.date}
       modifiedTime={post.date}
       tags={post.tags}
+      image={postImage}
+      additionalMeta={[
+        <meta key="article:section" property="article:section" content="Technology" />,
+        <meta key="article:published_time" property="article:published_time" content={post.date} />,
+        <meta key="article:modified_time" property="article:modified_time" content={post.date} />,
+        <meta key="twitter:label1" name="twitter:label1" content="Reading time" />,
+        <meta key="twitter:data1" name="twitter:data1" content={`${readingTime} min read`} />,
+        <meta key="twitter:label2" name="twitter:label2" content="Word count" />,
+        <meta key="twitter:data2" name="twitter:data2" content={`${wordCount} words`} />,
+      ]}
+      jsonLd={{
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: post.title,
+        description: post.excerpt,
+        image: fullImageUrl,
+        datePublished: post.date,
+        dateModified: post.date,
+        author: {
+          '@type': 'Organization',
+          name: 'Dogfood.ing',
+          url: siteUrl
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'Dogfood.ing',
+          logo: {
+            '@type': 'ImageObject',
+            url: `${siteUrl}/logo.png`
+          }
+        },
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': postUrl
+        },
+        keywords: post.tags.join(', '),
+        wordCount: wordCount,
+        timeRequired: `PT${readingTime}M`,
+        articleSection: 'Technology',
+        articleBody: content.replace(/<[^>]*>/g, '').substring(0, 2000) // First 2000 chars of text content
+      }}
     >
       <article className="container mx-auto px-4 py-8">
         <Breadcrumbs />
@@ -36,23 +84,27 @@ export default function PostPage({ post, content }: PostPageProps) {
                   month: 'long'
                 })}
               </time>
+              <span>•</span>
+              <span>{readingTime} min read</span>
               {post.tags?.length > 0 ? (
-                <div className="flex flex-wrap gap-2" role="list" aria-label="Article tags">
-                  {post.tags.map((tag) => (
-                    <Link
-                      key={tag}
-                      href={`/tags/${tag}`}
-                      className="bg-light-accent/20 dark:bg-dark-accent/20 text-light-accent dark:text-dark-accent px-2 py-1 rounded hover:bg-light-accent/30 dark:hover:bg-dark-accent/30 focus:outline-none focus:ring-2 focus:ring-light-accent dark:focus:ring-dark-accent"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        window.location.href = `/tags/${tag}`;
-                      }}
-                    >
-                      {tag}
-                    </Link>
-                  ))}
-                </div>
+                <>
+                  <div className="flex flex-wrap gap-2" role="list" aria-label="Article tags">
+                    {post.tags.map((tag) => (
+                      <Link
+                        key={tag}
+                        href={`/tags/${tag}`}
+                        className="bg-light-accent/20 dark:bg-dark-accent/20 text-light-accent dark:text-dark-accent px-2 py-1 rounded hover:bg-light-accent/30 dark:hover:bg-dark-accent/30 focus:outline-none focus:ring-2 focus:ring-light-accent dark:focus:ring-dark-accent"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          window.location.href = `/tags/${tag}`;
+                        }}
+                      >
+                        {tag}
+                      </Link>
+                    ))}
+                  </div>
+                </>
               ) : null}
             </div>
           </header>
@@ -93,10 +145,16 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     .process(post.content);
   const content = processedContent.toString();
 
+  // Calculate reading time (assuming 200 words per minute)
+  const wordCount = content.replace(/<[^>]*>/g, '').split(/\s+/).length;
+  const readingTime = Math.ceil(wordCount / 200);
+
   return {
     props: {
       post,
       content,
+      readingTime,
+      wordCount,
     },
   };
 }; 
