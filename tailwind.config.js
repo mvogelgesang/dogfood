@@ -8,15 +8,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Champagne theme (Light mode)
-        "light-background": "#FFF9F0", // Soft champagne background
-        "light-card": "#FFF5E6", // Lighter champagne for cards
-        "light-heading": "#1A120B", // Darker brown for headings (WCAG AA compliant)
-        "light-text": "#2C1810", // Rich brown for text (WCAG AA compliant)
-        "light-accent": "#8B6B4F", // Darker champagne gold accent for better contrast
-        "light-accent-hover": "#6B4F3B", // Even darker for hover states
-        "light-tag-bg": "#E5D5C3", // Light champagne for tag backgrounds
-        "light-tag-text": "#1A120B", // Darker brown for tag text
+        // Light mode
+        "light-background": "#fffbee", // New background color
+        "light-card": "#fff9e6", // Slightly darker than background for cards
+        "light-heading": "#422b0b", // Primary dark brown
+        "light-text": "#422b0b", // Same as heading for consistency
+        "light-accent": "#eaae40", // Primary accent
+        "light-accent-hover": "#c45f2f", // Secondary accent for hover states
+        "light-tag-bg": "#9e2c21", // Deep red for tag backgrounds
+        "light-tag-text": "#422b0b", // Dark brown for better contrast
 
         // Dog Food theme (Dark mode)
         "dark-background": "#1A120B", // Darker brown background
