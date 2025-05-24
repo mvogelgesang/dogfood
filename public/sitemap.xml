@@ -313,6 +313,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://dogfood.ing/posts/toast-full-stack-feast</loc>
+    <lastmod>2025-05-08T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://dogfood.ing/posts/tiktok-behind-the-algorithm</loc>
     <lastmod>2025-05-08T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -320,6 +326,12 @@
   </url>
   <url>
     <loc>https://dogfood.ing/posts/swiping-right-on-their-own-product</loc>
+    <lastmod>2025-05-08T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dogfood.ing/posts/stripes-secrete-sauce</loc>
     <lastmod>2025-05-08T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -430,12 +442,12 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://dogfood.ing/tags/Customer Zero</loc>
+    <loc>https://dogfood.ing/tags/Internal Tools</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://dogfood.ing/tags/Internal Tools</loc>
+    <loc>https://dogfood.ing/tags/Customer Zero</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -470,7 +482,17 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://dogfood.ing/tags/Customer Experience</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://dogfood.ing/tags/Ai</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dogfood.ing/tags/Fintech</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -486,16 +508,6 @@
   </url>
   <url>
     <loc>https://dogfood.ing/tags/Developer Tools</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Customer Experience</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Fintech</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -661,6 +673,21 @@
   </url>
   <url>
     <loc>https://dogfood.ing/tags/Machine Learning</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dogfood.ing/tags/Hospitality Tech</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dogfood.ing/tags/Saas</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dogfood.ing/tags/Developer Experience</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1825,27 +1852,12 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://dogfood.ing/tags/Hospitality Tech</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://dogfood.ing/tags/Auth0</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://dogfood.ing/tags/Saas</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://dogfood.ing/tags/Api Security</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dogfood.ing/tags/Developer Experience</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -2000,6 +2012,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://dogfood.ing/tags/Integrated Solutions</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://dogfood.ing/tags/Tiktok</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -2026,6 +2043,11 @@
   </url>
   <url>
     <loc>https://dogfood.ing/tags/Women In Tech</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dogfood.ing/tags/Payments</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
