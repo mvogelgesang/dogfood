@@ -7,28 +7,35 @@ export default function SiteOverview() {
             Dogfood.ing
           </h1>
           <p className="text-xl mb-8 text-light-text dark:text-dark-text">
-            Exploring how companies use their own products and technology to improve their offerings
+          At Dogfood.ing, we go inside the companies that live by a simple but powerful mantra: "Eat your own dog food." We uncover how innovative brands like Strava, WHOOP, and WhatsApp use their own technology every day to drive innovation, accelerate product development, and build the future. This is where theory meets practice.
           </p>
           
           <div className="grid md:grid-cols-2 gap-8 mt-12">
             <div className="bg-light-background dark:bg-dark-background p-6 rounded-lg">
               <h2 className="text-2xl font-semibold mb-4 text-light-heading dark:text-dark-heading">
-                What is Dogfooding?
+              The &apos;Dogfooding&apos; Advantage: Why It Matters
               </h2>
               <p className="text-light-text dark:text-dark-text">
-                &quot;Eating your own dog food&quot; is a business practice where companies use their own products
-                internally. This approach helps identify issues, gather feedback, and demonstrate confidence
-                in their offerings.
+              Companies that commit to dogfooding don&apos;t just talk about quality; they live it. This internal-first approach gives them a distinct competitive edge:
+                <ul>
+                  <li>Smarter Product Development: By using their own products, teams discover bugs, usability issues, and opportunities for improvement long before customers do.</li>
+                  <li>Authentic Innovation: Features are developed to solve real-world problems that employees experience firsthand, ensuring they are relevant and impactful.</li>
+                  <li>Unshakeable Customer Confidence: Actively using your own product is the ultimate demonstration of belief in its quality and reliability, building stronger trust with your users.</li>
+                </ul>
               </p>
             </div>
             
             <div className="bg-light-background dark:bg-dark-background p-6 rounded-lg">
               <h2 className="text-2xl font-semibold mb-4 text-light-heading dark:text-dark-heading">
-                Why It Matters
+              Explore Our In-Depth Analyses
               </h2>
               <p className="text-light-text dark:text-dark-text">
-                Companies that practice dogfooding often create better products, build stronger customer
-                relationships, and demonstrate their commitment to quality and continuous improvement.
+              Dive into our real-world case studies to see how this practice transforms industries:
+                <ol>
+                  <li>Fitness & Wearable Tech: Discover how the data-driven cultures at WHOOP and Wahoo Fitness refine health monitoring from within.</li>  
+                  <li>Virtual Worlds & Gaming: See how employees at Zwift shape their virtual cycling platform by being its most passionate users.</li>
+                  <li>Software & Messaging Apps: Learn how daily internal use builds more reliable and secure global platforms at companies like WhatsApp.</li>
+                </ol>
               </p>
             </div>
           </div>

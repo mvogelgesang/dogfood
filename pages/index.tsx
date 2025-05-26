@@ -22,9 +22,9 @@ export default function HomePage({ featuredPosts, latestPosts }: HomePageProps) 
       description="Discover how companies like Meta, Rakuten, and Cloudflare practice dogfooding to improve their products and services. Learn about real-world examples and best practices in product development, quality assurance, and innovation."
       jsonLd={{
         '@context': 'https://schema.org',
-        '@type': 'WebSite',
+        '@type': 'Blog',
         name: 'Dogfood.ing',
-        description: 'Exploring how companies use their own products and technology',
+        description: "In-depth case studies and analyses on how leading tech companies like Strava, WHOOP, and Zwift use their own products ('dogfooding') to drive innovation and improve quality.",
         url: process.env.NEXT_PUBLIC_SITE_URL || 'https://dogfood.ing',
         potentialAction: {
           '@type': 'SearchAction',
