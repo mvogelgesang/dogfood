@@ -7,7 +7,7 @@ export default function SiteOverview() {
             Dogfood.ing
           </h1>
           <p className="text-xl mb-8 text-light-text dark:text-dark-text">
-          At Dogfood.ing, we go inside the companies that live by a simple but powerful mantra: "Eat your own dog food." We uncover how innovative brands like Strava, WHOOP, and WhatsApp use their own technology every day to drive innovation, accelerate product development, and build the future. This is where theory meets practice.
+          At Dogfood.ing, we go inside the companies that live by a simple but powerful mantra: &quot;Eat your own dog food.&quot; We uncover how innovative brands like Strava, WHOOP, and WhatsApp use their own technology every day to drive innovation, accelerate product development, and build the future. This is where theory meets practice.
           </p>
           
           <div className="grid md:grid-cols-2 gap-8 mt-12">
